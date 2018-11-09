@@ -1,16 +1,27 @@
-# temperature-classifier
+# Temperature-classifier
+Foi utilizado um data-set com 157 temperaturas coletadas da cidade de Campinas (SP) do período de 01/06/2018 até 04/11/2018.
+As temperaturas maiores ou iguais a 22ºC e maior foram classificadas como temperaturas quentes, já as temperaturas entre 16ºC e 22ºC foram classificadas como neutras, e por último temperaturas abaixo de 16ºC foram classificadas como frias.
 
-update pip
+## Update pip
 .\venv\Scripts\python.exe -m pip install --upgrade pip --force-reinstall
 
-update requirements
+## Update requirements
 .\venv\Scripts\pip.exe freeze > requirements.txt
 
-install requirements
+## Install requirements
 .\venv\Scripts\pip3.6.exe install -r  requirements.txt
 
-Confusion Matrix Knn algorithm
-![Confusion Matrix Knn algorithm](./src/resources/images/confusion-matrix-knn.PNG)
+## Dados utilizados para treinar o algoritmo
+![Dados utilizados para treinar o algoritmo](./src/resources/images/data-set.PNG)
 
-Confusion Matrix Knn algorithm
-![Confusion Matrix Knn algorithm](./src/resources/images/confusion-matrix-svm.PNG)
+## Confusion Matrix Knn algorithm
+* Acuracidade: 92,5%
+* Base de validação do agente: ~25% do data-set
+
+![Confusion Matrix KNN algorithm](./src/resources/images/confusion-matrix-knn.PNG)
+
+## Confusion Matrix svm algorithm
+* Acuracidade: 92,5%
+* Base de validação do agente: ~25% do data-set
+
+![Confusion Matrix SVM algorithm](./src/resources/images/confusion-matrix-svm.PNG)
