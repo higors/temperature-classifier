@@ -5,12 +5,12 @@ import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsClassifier
 
-from src import confusion_matrix, process_dataset
+from src.resources import confusion_matrix, statistics, process_dataset
 
-path = './csv/classified-temperatures.csv'
+path = './resources/classified-temperatures.csv'
 data_set_processed = process_dataset.execute(path)
-# process_data_set.plot_statistics(data_set_processed['classes_name'], data_set_processed['cold_class'],
-#                                 data_set_processed['neutral_class'], data_set_processed['warm_class'])
+statistics.plot_statistics(data_set_processed['classes_name'], data_set_processed['cold_class'],
+                           data_set_processed['neutral_class'], data_set_processed['warm_class'])
 
 
 def train_knn_algorithm(temps, all_labels, classes):
@@ -36,4 +36,5 @@ def train_knn_algorithm(temps, all_labels, classes):
     print("Accuracy: %s" % knn_algorithm_classifier.score(test_temperatures, test_labels))
 
 
-train_knn_algorithm(data_set_processed['temperatures'], data_set_processed['labels'], data_set_processed['classes_name'])
+train_knn_algorithm(data_set_processed['temperatures'], data_set_processed['labels'],
+                    data_set_processed['classes_name'])
