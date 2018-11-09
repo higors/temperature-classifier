@@ -8,3 +8,9 @@ update requirements
 
 install requirements
 .\venv\Scripts\pip3.6.exe install -r  requirements.txt
+
+Confusion Matrix Knn algorithm
+![Confusion Matrix Knn algorithm](./src/resources/images/confusion-matrix-knn.PNG)
+
+Confusion Matrix Knn algorithm
+![Confusion Matrix Knn algorithm](./src/resources/images/confusion-matrix-svm.PNG)
