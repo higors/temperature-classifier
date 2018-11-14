@@ -15,12 +15,12 @@ statistics.plot_statistics(data_set_processed['classes_name'], data_set_processe
 
 def train_knn_algorithm(temps, all_labels, classes):
     train_temperatures, test_temperatures, train_labels, test_labels = train_test_split(temps, all_labels,
-                                                                                        test_size=0.25,
+                                                                                        test_size=0.30,
                                                                                         random_state=25)
     train_temperatures = train_temperatures.reshape(-1, 1)
     test_temperatures = test_temperatures.reshape(-1, 1)
     # create knn algorithm
-    knn_algorithm_classifier = KNeighborsClassifier(n_neighbors=3)
+    knn_algorithm_classifier = KNeighborsClassifier(n_neighbors=9)
 
     # fit and serialize the algorithm knn
     trained_svm = knn_algorithm_classifier.fit(np.array(train_temperatures), train_labels)
