@@ -33,7 +33,7 @@ Conforme o gráfico mostrado abaixo é possível visualizar temperaturas de outr
 
 ![Result Chart](./src/resources/images/chart.png)
 
-Com isso conclui-se que o modelo KNN tem dificuldades em classificar temperaturas que são negativas devido ao dataset usado para treino, já que esse dataset foi baseado nas temperaturas da cidade de Campinas, que por sua vez apresentou poucas amostras de temperaturas negativas. Um outro fator é como o KNN se baseia em seus vizinhos próximos como não há muitas amostras de temperaturas negativas o mesmo acaba não encontrando vizinhos e assim classificando temperaturas que são negativas como neutras.
+Com isso conclui-se que o modelo KNN tem dificuldades em classificar temperaturas que são negativas devido ao dataset usado para treino, já que esse dataset foi baseado nas temperaturas da cidade de Campinas, que por sua vez apresentou poucas amostras de temperaturas negativas. Um outro fator é como o KNN se baseia em seus vizinhos próximos como não há muitas amostras de temperaturas negativas o mesmo acaba não encontrando e assim classificando temperaturas que são negativas como neutras.
 
 <br/>
 <br/>
