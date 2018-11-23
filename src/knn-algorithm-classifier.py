@@ -7,7 +7,7 @@ from sklearn.neighbors import KNeighborsClassifier
 
 from src.resources import confusion_matrix, statistics, process_dataset
 
-path = './resources/classified-temperatures.csv'
+path = './resources/csv/classified-temperatures.csv'
 data_set_processed = process_dataset.execute(path)
 statistics.plot_statistics(data_set_processed['classes_name'], data_set_processed['cold_class'],
                            data_set_processed['neutral_class'], data_set_processed['warm_class'])
